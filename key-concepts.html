@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Concepts | Browser Cookies</title>
+  <!-- Links this page to the site's one CSS file -->
+  <link rel="stylesheet" href="css/images/style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Browser Cookies</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-cookies-work.html">How Cookies Work</a></li>
+        <li><a href="cookie-types-privacy.html">Types and Privacy</a></li>
+        <li><a href="key-concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Key Concepts</h2>
+
+    <!-- This paragraph uses intro id -->
+    <p id="intro">
+      These six ideas explain most of what you need to know about browser
+      cookies. Each one builds on the others.
+    </p>
+
+    <h3>1. The Web Is Stateless</h3>
+    <p>
+      A web server sees each request as a completely fresh one.
+       By default, the server does not know that you have already
+        visited some other page on the website. To help solve this
+         problem, cookies were invented.
+    </p>
+
+    <h3>2. Sessions</h3>
+    <p>
+      A session represents an interval of activity, including being logged in.
+      Typically, the server provides you with a randomly generated ID that is stored
+      by your web browser in a cookie. Each time, on receiving a request, the server
+      looks for your data through this ID.
+    </p>
+
+    <h3>3. Cookie Security</h3>
+    <p>
+      Cookies may carry private data like the session identifier for logins,
+      therefore they require security. <b>Secure</b> property will prevent a cookie
+      from traveling via an insecure connection, whereas <b>HttpOnly</b> will not allow
+      any script from the page to access it.
+    </p>
+
+    <h3>4. Cross-Site Tracking</h3>
+    <p>
+      If an advertiser plants cookies in many different websites, 
+      it can track you in all those sites and create a profile of 
+      your interests. This is one of the major privacy issues 
+      associated with cookies.
+    </p>
+
+    <h3>5. Consent</h3>
+    <p>
+      GDPR regulations require that most websites obtain permission
+       from users before implementing any non-essential cookies.
+        That is why cookie consent banners pop up when you visit a 
+        website for the first time.
+    </p>
+
+    <h3>6. Managing Your Cookies</h3>
+    <p>
+      You have complete control over the cookies that are stored in your browser.
+      You can see them, delete them, and block specific ones in your browser’s privacy
+      settings. Deleting cookies means you will be logged out of almost all websites,
+      so be prepared to login again.
+    </p>
+  </main>
+
+ 
+  <footer>
+    <p>
+      This website is a class project for IT 3203.
+      Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 class website</a>.
+    </p>
+  </footer>
+
+</body>
+</html>

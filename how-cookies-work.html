@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How Cookies Work | Browser Cookies</title>
+  <!-- Links this page to the site's one CSS file -->
+  <link rel="stylesheet" href="css/images/style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>Browser Cookies</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-cookies-work.html">How Cookies Work</a></li>
+        <li><a href="cookie-types-privacy.html">Types and Privacy</a></li>
+        <li><a href="key-concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>How Cookies Work</h2>
+
+   
+    <h3>What Is a Cookie?</h3>
+    <p>
+      Browser cookies refer to bits of information which are sent by the server of 
+      the visited website to the user's browser in order for them to be stored.
+       The use of cookies is justified by the fact that the
+        Hypertext Transfer Protocol (HTTP) is stateless and therefore, 
+        the server does not remember previous client requests.
+         Upon the response, the server can provide a Set-Cookie header, and the 
+         browser will then send the cookie back to the server 
+         in a Cookie header (MDN Web Docs). The inventor of the cookie is Lou
+          Montulli of Netscape (1994)
+    </p>
+
+  
+    <h3>How Exactly Do Cookies Work?</h3>
+      <p>
+      Each cookie exchange is an interaction between the browser and the
+      server. During the first visit, all that the browser does is send a request
+      to the server asking for a web page. The server replies by sending the web
+      page and a Set-Cookie header, indicating to the browser that it should set
+      a cookie. Once the cookie has been set, the browser sends it back in a
+      Cookie header during each subsequent request to the same server. To sum up,
+      the server uses the Set-Cookie header to send the cookie, while the
+      browser uses the Cookie header to return the cookie.
+    </p>
+
+    <h3>The Cookie Process: Simplified</h3>
+    <ol class="steps">
+      <li>You visit a website and your browser sends a request to the website's server.</li>
+      <li>The server replies with the web page and may include a cookie to store.</li>
+      <li>Your browser saves the cookie on your computer.</li>
+      <li>When visiting the website again in the future, your browser sends the cookie back to the server.</li>
+    </ol>
+
+    
+    <h3>What Cookies Are Used For</h3>
+    <ul>
+      <li><b>Keeping you logged in</b> </li>
+      <li><b>Remembering your shopping cart</b></li>
+      <li><b>Remembering your preferences</b> </li>
+      <li><b>Ads and Analytics</b></li>
+      <li><b>And much much more!</b></li>
+    </ul>
+
+    <!-- Table -->
+    <h3>Controlling Cookies</h3>
+    <h5>Every cookie has a number of settings that controls how exactly it behaves</h5>
+    <table>
+      <tr>
+        <th>Setting</th>
+        <th>What It Does</th>
+      </tr>
+      <tr>
+        <td>Name=Value</td>
+        <td>The cookie’s label and the information it holds.</td>
+      </tr>
+      <tr>
+        <td>Domain</td>
+        <td>Which website (and its subdomains) the cookie belongs to.</td>
+      </tr>
+      <tr>
+        <td>Path</td>
+        <td>Limits the cookie to certain parts of a site</td>
+      </tr>
+      <tr>
+        <td>Expires</td>
+        <td>The date the cookie is deleted.</td>
+      </tr>
+      <tr>
+        <td>Max-Age</td>
+        <td>How many seconds until the cookie is deleted.</td>
+      </tr>
+       <tr>
+        <td>Secure</td>
+        <td>Only sends the cookie over protected (HTTPS) connections.</td>
+      </tr>
+      <tr>
+        <td>HttpOnly</td>
+        <td>Blocks JavaScript on the page from reading the cookie.</td>
+      </tr>
+       <tr>
+        <td>SameSite</td>
+        <td>Controls whether the cookie is sent with requests from other websites.</td>
+      </tr>
+    </table>
+
+    <!-- Image -->
+    <h3>Look for Yourself!</h3>
+    <p>
+      You can view the cookies a site has stored using your browser's developer
+      tools, as shown below.
+    </p>
+    <img src="css/images/CookiePic.png" alt="Screenshot of the cookies list in browser developer tools">
+  </main>
+
+  
+  <footer>
+    <p>
+      This website is a class project for IT 3203.
+      Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 class website</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
